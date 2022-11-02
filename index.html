@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column-preveiw card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 180px;
+            margin-bottom: 100px;
+
+        }
+
+        .sedans {
+            
+            width: 310px;
+            height: 500px;
+            background-color: orange;
+            position: relative;
+
+
+        }
+
+        .suv {
+           
+            width: 310px;
+            height: 500px;
+            background-color: midnightblue;
+            position: relative;
+
+        }
+
+        .luxury {
+          
+            width: 310px;
+            height: 500px;
+            background-color: darkgreen;
+            position: relative;
+
+        }
+
+        h1 {
+            font-size: 45px;
+            font-family: 'Teko', sans-serif;
+            margin-top: 50px;
+            margin-left: 50px;
+            color: white;
+        }
+
+        .logo {
+            margin-top: 50px;
+            padding-left: 52px;
+        }
+
+        .container p {
+            color: white;
+            line-height: 1.4;
+            word-wrap: normal;
+            padding-left: 50px;
+            padding-right: 60px;
+        }
+
+        .container span {
+            
+            background-color: white;
+            padding: 16px 34px;
+            position: absolute;
+            bottom: 45px;
+            left: 50px;
+            border-radius: 40px;
+        }
+
+        .sedans span {
+            color: orange;
+        }
+
+        .suv span {
+            color: midnightblue;
+        }
+
+        .luxury span {
+            color: darkgreen;
+        }
+
+        @media (120px <= width <= 480px){
+            .container{
+                box-sizing: border-box;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   
+                   margin: 90px 32px;
+                  
+                   
+            }
+         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sedans">
+            <div class="logo">
+                <img src="icon-sedans.svg" alt="sedan logo">
+            </div>
+            <h1>SEDANS</h1>
+            <p>Choose a sedan for its affordability and excellant fuel economy. Ideal for cruising in the city or on
+                your neaxt round trip</p>
+            <span>Learn More</span>
+
+        </div>
+        <div class="suv">
+            <div class="logo">
+                <img src="icon-suvs.svg" alt="suv logo">
+            </div>
+            <h1>SUVS</h1>
+            <p>Take an SUV for its spacious interior,power, and versatality.Perfect for your next family vacation and
+                off-road adventures</p>
+            <span>Learn More</span>
+
+        </div>
+        <div class="luxury">
+            <div class="logo">
+                <img src="icon-luxury.svg" alt="luxury logo">
+            </div>
+            <h1>LUXURY</h1>
+            <p>Cruise in the best car brands without the bloated prices. Enjoy the nhanced comfort of a luxury rental
+                and arrive in style</p>
+            <span>Learn More</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
