@@ -5,7 +5,8 @@
         justify-content: center;
         margin-top: 110px;
         margin-bottom: 100px;
-       
+       flex-wrap: wrap;
+      
 
     }
 
@@ -61,7 +62,7 @@
     .container span {
         
         background-color: white;
-        padding: 16px 34px;
+        padding: 10px 34px;
         position: absolute;
         bottom: 45px;
         left: 50px;
@@ -80,16 +81,19 @@
         color: darkgreen;
     }
 
-    @media (120px <= width <= 480px){
+    @media screen and (320px <= width <= 480px){
         .container{
-            box-sizing: border-box;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               
-               margin: 90px 32px;
+            
+               margin: 0px 32px;
               
                
         }
+
+        .luxury ,.sedans, .suv{
+            width: 100%;
+            
+        }
      
     }
+
+    
